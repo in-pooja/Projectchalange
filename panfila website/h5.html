@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css</title>
+  <style>
+    .container{
+      width: 600px;
+      height: 300px;
+      background-color:black;
+      /* display: flex;
+       */
+       display: grid;
+       /* grid-gap: 30px; */
+       /* grid-template-rows: 100px 100px 100px; */
+       grid-template-columns: repeat(4 2fr);
+       /* grid-template-columns: 300px 300px 300px; */
+    }
+    .itme{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border: 1px solid black;
+    
+    }
+    #one{
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Grid playground</h1>
+  <div class="container">
+    <div class="itme" id="one">1</div>
+    <div class="itme">2</div>
+    <div class="itme">3</div>
+    <div class="itme">4</div>
+    <div class="itme">5</div>
+  </div>
+</body>
+</html>

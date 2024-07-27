@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Grid</title>
+    <style>
+
+    .Grid{
+        display: grid;
+        grid-template-rows: 4fr 4fr 3fr;
+        grid-auto-rows:2fr;
+        grid-template-columns: repeat(3,5fr);
+        grid-gap:2rem;
+    }
+
+
+
+
+.box{
+    background-color: pink;
+    border: 2px solid black
+
+}
+    </style>
+</head>
+<body>
+    <div class="Grid">
+        <div class="box">Box1-1</div>
+        <div class="box">Box1-2</div>
+        <div class="box">Box1-3</div>
+        <div class="box">Box1-4</div>
+        <div class="box">Box1-5</div>
+        <div class="box">Box1-6</div>
+        <div class="box">Box1-7</div>
+        <div class="box">Box1-8</div>
+        <div class="box">Box1-9</div>
+        <div class="box">Box1-10</div>
+        <div class="box">Box1-11</div>
+        <div class="box">Box1-12</div>
+    </div>
+    
+</body>
+</html>
